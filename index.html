@@ -4,7 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="styles.css">
-	<title> Matthew Rutala's Research </title>
+	<title>M. J. Rutala</title>
 </head>
 <body>
 
@@ -18,7 +18,7 @@
 	</div>-->
 </div>
 
-<div class="topnav" id="myTopnav">
+<!-- <div class="topnav" id="myTopnav">
   <a href="#top" class="active">Home</a>
   <a href="#about">About Me</a>
   <div class="dropdown">
@@ -34,11 +34,24 @@
   <a href="#cv">CV</a>
   <a href="#contact">Contact</a>
   <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div> -->
+<div class="sideprofile">
+	<img src="images/ProfilePicture.jpeg" alt="Avatar" style="width:200px">
+	<h1> Hi! I'm Matt Rutala </h1>
+	<p>a post-doctoral scholar at the DIAS Dunsink Observatory in Dublin, Ireland</p>
+</div>
+
+<div class="sidenav" id="mySidenav">
+	<a href="javascript:void(0)" class="togglebtn" onclick="toggleNav()">☰</a>
+	<a href="#about">About Me</a>
+	<a href="#interests">Research Interests</a>
+	<a href="#highlights">Science Highlights</a>
+	<a href="CV">CV</a>
+	<a href="contact">Contact</a>
 </div>
 
 <!-- About Me -->
-<a name="about"></a>
-<div class="content">
+<div class="content" id="about">
 	<h1>About Me</h1>
 	<p>
 		I'm a post-doctoral researcher in the Planetary Magnetospheres group at the Dublin Institute for Advanced Studies (DIAS).		
@@ -89,9 +102,9 @@
 	<a name="hydrogenbulge"></a>
 	<h2>The Hydrogen Bulge</h2>
 	<p>
-		Where the dawn storms are interesting because they do not corotate (but should), Jupiter's hydrogen bulge is interesting because it does corotate (but shouldn't).
-		
-		The hydrogen Lyman-alpha bulge, or just the hydrogen bulge, is not a physical change in Jupiter's shape, as the name might imply, but an unexplained increase in the equatorial H Ly-alpha emission near longitudes of 100 deg. The emission originates in Jupiter's upper atmosphere, where winds and other dynamics should dictate its motion; instead, the hydrogen bulge corotates with the planet. Corotation is not expected for an atmospheric phenomenon and indicates some connection to the magnetosphere, but the drivers must be different than in the auroral regions, as no increased H2 emission-- which dominates the aurorae-- has ever been measured near the bulge. Many processes have been put forth to explain these fast H atoms, but observations have not yet been able to distinguish between these.
+		Jupiter's hydrogen Lyman-alpha bulge, or "the hydrogen bulge", is not a physical change in Jupiter's shape, as the name might imply, but an unexplained increase in the equatorial H Ly-alpha emission near longitudes of 100 deg. The emission originates in Jupiter's upper atmosphere, where winds and other dynamics should dictate its motion; instead, the hydrogen bulge corotates with the planet. Corotation is not expected for an atmospheric phenomenon and indicates some connection to the magnetosphere, but the drivers must be different than in the auroral regions, as no increased H2 emission-- which dominates the aurorae-- has ever been measured near the bulge. Many processes have been put forth to explain these fast H atoms, but observations have not yet been able to distinguish between these.
+		<br><br>
+		The hydrogen bulge will be imaged for the first time in decades later in 2025, owing to our successful proposal to scan the Hubble Space Telescope's Space Telescope Imaging Spectrograph (HST/STIS) across Jupiter's equatorial regions (GO 17812). These observations will be spectrally and spatially resolved, allowing unprecedented insight into the location, shape, and drivers of Jupiter's hydrogen bulge.
 	</p>
 </div>
 
@@ -121,7 +134,7 @@
 	
 </div>
 
-<script>
+<!-- <script>
 function myFunction() {
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
@@ -130,7 +143,8 @@ function myFunction() {
     x.className = "topnav";
   }
 }
-</script>
+</script> -->
+<script type="text/javascript" src="js/collapseNavbar.js"></script>
 
 </body>
 </html>
