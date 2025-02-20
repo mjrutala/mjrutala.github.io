@@ -6,6 +6,7 @@
   --menu-bg: #669bbc;
   --menu-color: #001219;
   --menu-hover: #FFFFFF;
+  --link-color: #0504AA;
 
   --global-margin: 300px;
   --menu-visibility: visible;
@@ -16,7 +17,11 @@
   :root {
       --body-bg: #001219;
       --body-color: #FFFFFF;
+
+      --link-color: #75bbfd;
+
   }
+  
 }
 
 body {
@@ -133,11 +138,17 @@ p {
 .content {
   margin-left: var(--global-margin);
   padding-left: 10px;
-  width: 80%;
+  width: 90%;
+  max-width: 1100px;
   color: var(--body-color);
   transition: 0.4s;
   overflow-x: hidden;
+  letter-spacing: 0.5px;
   /*padding-top: 100px;*/
+}
+
+.content a {
+  color: var(--link-color)
 }
 
 @media (max-width: 768px) {
@@ -276,15 +287,6 @@ html {
 /* Navigation Bar Parameters */
 
 
-.content {
-  margin-left: var(--global-margin);
-  padding-left: 10px;
-  width: 80%;
-  color: var(--body-color);
-  transition: 0.4s;
-  overflow-x: hidden;
-  /*padding-top: 100px;*/
-}
 
 
 /* Banner Image and Text */
@@ -304,6 +306,13 @@ html {
   object-fit: cover;
   object-position: top;
 }
+
+.pdf {
+  margin-left: var(--global-margin);
+  width:calc(100% - var(--global-margin));
+  }
+
+
 /*  */
 body, html {
   height: 100%;
