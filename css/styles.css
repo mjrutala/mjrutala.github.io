@@ -138,7 +138,7 @@ p {
 .content {
   margin-left: var(--global-margin);
   padding-left: 10px;
-  width: 90%;
+  width: 80%;
   max-width: 1100px;
   color: var(--body-color);
   transition: 0.4s;
@@ -171,7 +171,7 @@ p {
   }
 
   .content {
-    width:100%;
+    width:120%;
   }
 }
 
@@ -311,6 +311,9 @@ html {
   margin-left: var(--global-margin);
   width:calc(100% - var(--global-margin));
   }
+.pdf p {
+  margin-left: var(--global-margin);
+}
 
 
 /*  */
