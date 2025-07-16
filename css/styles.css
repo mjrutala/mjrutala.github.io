@@ -54,7 +54,7 @@ p {
 
 /* Fixed Side Mini-profile */
 .sideprofile {
-  height: 300px;
+  height: 350px;
   width: 300px;
   position: fixed;
   z-index: 2;
@@ -88,6 +88,16 @@ p {
   margin: 10px 10px 10px 10px;
 }
 
+.sideprofile .links {
+  display: flex;
+  justify-content: center; 
+  align-content: center;
+}
+
+.sideprofile .links a {
+  padding: 4px 16px;
+}
+
 /* Fixed Side Navbar */
 .sidenav {
   height: 100%;
@@ -100,7 +110,7 @@ p {
   color: var(--menu-color);
   overflow: hidden;
   white-space: nowrap;
-  padding-top: 300px;
+  padding-top: 350px;
   transition: 0.4s;
 }
 
